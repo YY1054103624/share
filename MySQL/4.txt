@@ -1,0 +1,25 @@
+1 attributes
+	null
+	default
+		触发方式
+	primary key
+		特点
+		创建方式		
+		删除主键
+		添加主键
+	auto_increment
+		查看自增长
+		创建方式
+		修改自增长的值
+	unique
+		创建方式
+		删除unique key
+		添加unique key
+	comment
+		创建方式
+		查看方式
+2 数据新增
+	批量插入
+	蠕虫复制
+	主键冲突
+	
