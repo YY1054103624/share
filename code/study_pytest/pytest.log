@@ -1,0 +1,116 @@
+. test_addition.py::test_add[5-5-10]
+F test_addition.py::test_add[3-5-12]
+ input1 = 3, input2 = 5, output = 12
+ 
+     @pytest.mark.parametrize("input1, input2, output", [(5, 5, 10), (3, 5, 12)])
+     def test_add(input1, input2, output):
+ >       assert input1+input2 == output, "failed"
+ E       AssertionError: failed
+ E       assert 8 == 12
+ E         +8
+ E         -12
+ 
+ test_addition.py:6: AssertionError
+s test_addition.py::test_add_1
+ Skipped: unconditional skip
+s test_addition.py::test_add_2
+ Skipped: unconditional skip
+X test_addition.py::test_add_3
+x test_addition.py::test_add_4
+ @pytest.mark.xfail
+     def test_add_4():
+ >       assert 15+13 == 100, "failed"
+ E       AssertionError: failed
+ E       assert 28 == 100
+ E         +28
+ E         -100
+ 
+ test_addition.py:26: AssertionError
+. test_addition.py::test_add_5
+F test_addition.py::test_add_6
+ def test_add_6():
+ >       assert 3+2 == 6, "failed"
+ E       AssertionError: failed
+ E       assert 5 == 6
+ E         +5
+ E         -6
+ 
+ test_addition.py:34: AssertionError
+F test_basic_fixture.py::test_comparewithAA
+ supply_AA_BB_CC = [25, 35, 45]
+ 
+     def test_comparewithAA(supply_AA_BB_CC):
+         zz = 35
+ >       assert supply_AA_BB_CC[0] == zz, "aa and zz comparison failed"
+ E       AssertionError: aa and zz comparison failed
+ E       assert 25 == 35
+ E         +25
+ E         -35
+ 
+ test_basic_fixture.py:6: AssertionError
+. test_basic_fixture.py::test_comparewithBB
+F test_basic_fixture.py::test_comparewithCC
+ supply_AA_BB_CC = [25, 35, 45]
+ 
+     def test_comparewithCC(supply_AA_BB_CC):
+         zz = 35
+ >       assert supply_AA_BB_CC[2] == zz, "cc and zz comparison failed"
+ E       AssertionError: cc and zz comparison failed
+ E       assert 45 == 35
+ E         +45
+ E         -35
+ 
+ test_basic_fixture.py:16: AssertionError
+F test_basic_fixture2.py::test_comparewithAA
+ supply_AA_BB_CC = [25, 35, 45]
+ 
+     def test_comparewithAA(supply_AA_BB_CC):
+         zz = 35
+ >       assert supply_AA_BB_CC[0] == zz, "aa and zz comparison failed"
+ E       AssertionError: aa and zz comparison failed
+ E       assert 25 == 35
+ E         +25
+ E         -35
+ 
+ test_basic_fixture2.py:6: AssertionError
+. test_basic_fixture2.py::test_comparewithBB
+F test_basic_fixture2.py::test_comparewithCC
+ supply_AA_BB_CC = [25, 35, 45]
+ 
+     def test_comparewithCC(supply_AA_BB_CC):
+         zz = 35
+ >       assert supply_AA_BB_CC[2] == zz, "cc and zz comparison failed"
+ E       AssertionError: cc and zz comparison failed
+ E       assert 45 == 35
+ E         +45
+ E         -35
+ 
+ test_basic_fixture2.py:16: AssertionError
+F test_sample1.py::test_file1_method1
+ @pytest.mark.set1
+     def test_file1_method1():
+         x = 5
+         y = 6
+         assert x + 1 == y, "test failed because x=" + str(x) + " y=" + str(y)
+ >       assert x == y, "test failed because x=" + str(x) + " y=" + str(y)
+ E       AssertionError: test failed because x=5 y=6
+ E       assert 5 == 6
+ E         +5
+ E         -6
+ 
+ test_sample1.py:9: AssertionError
+. test_sample1.py::test_file1_method2
+F test_sample2.py::test_file2_method1
+ @pytest.mark.set1
+     def test_file2_method1():
+         x = 5
+         y = 6
+         assert x + 1 == y, "test failed"
+ >       assert x == y, "test failed because x=" + str(x) + " y=" + str(y)
+ E       AssertionError: test failed because x=5 y=6
+ E       assert 5 == 6
+ E         +5
+ E         -6
+ 
+ test_sample2.py:9: AssertionError
+. test_sample2.py::test_file2_method2

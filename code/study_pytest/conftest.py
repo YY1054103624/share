@@ -7,3 +7,8 @@ def supply_AA_BB_CC():
     bb = 35
     cc = 45
     return [aa, bb, cc]
+
+
+@pytest.fixture
+def supply_url():
+    return "https://reqres.in/api"

@@ -9,7 +9,7 @@ def test_file1_method1():
     assert x == y, "test failed because x=" + str(x) + " y=" + str(y)
 
 
-@pytest.mark.set2
+@pytest.mark.set2py
 def test_file1_method2():
     x = 5
     y = 6
